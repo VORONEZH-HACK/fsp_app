@@ -17,11 +17,13 @@ class AppColors {
     required this.primary,
     required this.secondary,
     required this.label,
+    required this.accent,
   });
 
   final Color background;
   final Color primary;
   final Color secondary;
+  final Color accent;
   final Color label;
 
   // TODO: Light theme
@@ -29,8 +31,9 @@ class AppColors {
 
   static AppColors get dark => AppColors(
         background: AppColorsPalette.blackDark,
-        primary: AppColorsPalette.redDark,
+        primary: AppColorsPalette.whiteDark,
         secondary: AppColorsPalette.blueDark,
+        accent: AppColorsPalette.redDark,
         label: AppColorsPalette.grayDark,
       );
 }

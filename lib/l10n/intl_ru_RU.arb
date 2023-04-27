@@ -1,4 +1,19 @@
 {
   "@@locale": "ru_RU",
-  "welcome_title": "Welcome to the flutter"
+  "welcome_title": "Welcome to the flutter",
+  "unknown_screen": "Неизвестный экран",
+  "login": "Вход",
+  "event_date": "Дата проведения",
+  "event_team": "Команда",
+  "event_rating": "Рейтинг",
+  "event_date_from": "От",
+  "event_date_to": "до",
+  "event_date_hackers": "участников",
+  "event_filter_newest": "Новые",
+  "event_filter_best": "Лучшие",
+  "event_filter_popular": "Популярные",
+  "retry": "Попробовать еще раз",
+  "event_error": "Проверьте подключение к интернету",
+  "events_and_competitions_title": "События и соревнования",
+  "events_and_competitions_subtitle": "/* В этом разделе вы можете увидеть анонсы ближайших событий в области cпортивного программирования в России */"
 }

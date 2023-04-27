@@ -1,4 +1,19 @@
 {
   "@@locale": "en_US",
-  "welcome_title": "Welcome to the flutter"
+  "welcome_title": "Welcome to the flutter",
+  "unknown_screen": "Unknown screen!",
+  "login": "Login",
+  "event_date": "Event date",
+  "event_team": "Team",
+  "event_date_from": "From",
+  "event_date_to": "to",
+  "event_date_hackers": "participants",
+  "event_rating": "Rating",
+  "event_filter_newest": "Newest",
+  "event_filter_best": "Best",
+  "event_filter_popular": "Popular",
+  "retry": "Try again",
+  "event_error": "Check your internet connection",
+  "events_and_competitions_title": "Events and competitions",
+  "events_and_competitions_subtitle": "/* In this section you can see the announcements of upcoming sports programming events in Russia */"
 }

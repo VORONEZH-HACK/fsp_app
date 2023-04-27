@@ -22,6 +22,27 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "event_date": MessageLookupByLibrary.simpleMessage("Дата проведения"),
+        "event_date_from": MessageLookupByLibrary.simpleMessage("От"),
+        "event_date_hackers":
+            MessageLookupByLibrary.simpleMessage("участников"),
+        "event_date_to": MessageLookupByLibrary.simpleMessage("до"),
+        "event_error": MessageLookupByLibrary.simpleMessage(
+            "Проверьте подключение к интернету"),
+        "event_filter_best": MessageLookupByLibrary.simpleMessage("Лучшие"),
+        "event_filter_newest": MessageLookupByLibrary.simpleMessage("Новые"),
+        "event_filter_popular":
+            MessageLookupByLibrary.simpleMessage("Популярные"),
+        "event_rating": MessageLookupByLibrary.simpleMessage("Рейтинг"),
+        "event_team": MessageLookupByLibrary.simpleMessage("Команда"),
+        "events_and_competitions_subtitle": MessageLookupByLibrary.simpleMessage(
+            "/* В этом разделе вы можете увидеть анонсы ближайших событий в области cпортивного программирования в России */"),
+        "events_and_competitions_title":
+            MessageLookupByLibrary.simpleMessage("События и соревнования"),
+        "login": MessageLookupByLibrary.simpleMessage("Вход"),
+        "retry": MessageLookupByLibrary.simpleMessage("Попробовать еще раз"),
+        "unknown_screen":
+            MessageLookupByLibrary.simpleMessage("Неизвестный экран"),
         "welcome_title":
             MessageLookupByLibrary.simpleMessage("Welcome to the flutter")
       };
