@@ -25,7 +25,7 @@ class EventsListFilterButton extends StatelessWidget {
       borderColor: context.colors.secondary,
       titleColor: context.colors.primary,
       titleStyle: context.texts.body2.copyWith(
-        fontWeight: FontWeight.w200,
+        fontWeight: FontWeight.w300,
       ),
       borderWidth: 1.0,
     );

@@ -3,24 +3,26 @@ import 'package:flutter/material.dart';
 class FlatButton extends StatelessWidget {
   const FlatButton({
     Key? key,
-    required this.title,
+    this.title,
     required this.onPressed,
-    required this.titleColor,
-    required this.titleStyle,
+    this.titleColor,
+    this.titleStyle,
     required this.borderWidth,
     this.padding = const EdgeInsets.only(right: 16.0),
     this.backgroundColor = Colors.transparent,
     this.borderColor = Colors.transparent,
+    this.titleWidget,
   }) : super(key: key);
 
-  final String title;
+  final String? title;
   final VoidCallback onPressed;
   final Color backgroundColor;
   final Color borderColor;
-  final Color titleColor;
-  final TextStyle titleStyle;
+  final Color? titleColor;
+  final TextStyle? titleStyle;
   final double borderWidth;
   final EdgeInsets padding;
+  final Widget? titleWidget;
 
   @override
   Widget build(BuildContext context) {
@@ -52,12 +54,13 @@ class FlatButton extends StatelessWidget {
         ),
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 14.0, vertical: 6.0),
-          child: Text(
-            title,
-            style: titleStyle.copyWith(
-              color: titleColor,
-            ),
-          ),
+          child: titleWidget ??
+              Text(
+                title ?? '',
+                style: titleStyle?.copyWith(
+                  color: titleColor,
+                ),
+              ),
         ),
       ),
     );

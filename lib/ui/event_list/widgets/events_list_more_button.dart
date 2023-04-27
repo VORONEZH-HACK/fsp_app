@@ -20,7 +20,7 @@ class EventsListMoreButton extends StatelessWidget {
           ),
           textStyle: MaterialStateProperty.resolveWith(
             (state) => context.texts.body2.copyWith(
-              fontWeight: FontWeight.w200,
+              fontWeight: FontWeight.w300,
               color: context.colors.primary,
             ),
           ),

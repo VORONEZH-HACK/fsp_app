@@ -13,6 +13,10 @@
   "event_filter_best": "Best",
   "event_filter_popular": "Popular",
   "retry": "Try again",
+  "handmade": "By hands",
+  "resume": "By resume",
+  "auth_description": "/* Uploading via resume will automatically fill in the required fields, for example, contacts, about yourself, education */",
+  "deprecated": "// deprecated",
   "event_error": "Check your internet connection",
   "events_and_competitions_title": "Events and competitions",
   "events_and_competitions_subtitle": "/* In this section you can see the announcements of upcoming sports programming events in Russia */"

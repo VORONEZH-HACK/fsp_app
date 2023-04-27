@@ -59,7 +59,7 @@ class EventsListItem extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: context.texts.body1.copyWith(
                 color: context.colors.background,
-                fontWeight: FontWeight.w200,
+                fontWeight: FontWeight.w300,
               ),
             ),
             const SizedBox(height: 18),

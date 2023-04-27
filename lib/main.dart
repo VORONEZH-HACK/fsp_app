@@ -26,12 +26,12 @@ class MyApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final brightness = SchedulerBinding.instance.window.platformBrightness;
-    final isDark = brightness == Brightness.dark;
+    final isNight = brightness == Brightness.dark;
 
     return AppTheme(
-      data: isDark ? AppThemeData.light : AppThemeData.dark,
-      colors: isDark ? AppColors.light : AppColors.dark,
-      texts: isDark ? AppTextStyles.light : AppTextStyles.dark,
+      data: isNight ? AppThemeData.day : AppThemeData.night,
+      colors: isNight ? AppColors.day : AppColors.night,
+      texts: isNight ? AppTextStyles.day : AppTextStyles.night,
       child: Builder(
         builder: (context) => MaterialApp(
           title: 'FSP App',

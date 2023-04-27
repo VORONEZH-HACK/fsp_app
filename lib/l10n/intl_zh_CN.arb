@@ -1,0 +1,23 @@
+{
+  "@@locale": "zh_CN",
+  "welcome_title": "欢迎来到 Flutter",
+  "unknown_screen": "未知的屏幕!",
+  "login": "登录",
+  "event_date": "事件日期",
+  "event_team": "团队",
+  "event_date_from": "从",
+  "event_date_to": "至",
+  "event_date_hackers": "参与者",
+  "event_rating": "评分",
+  "event_filter_newest": "最新",
+  "event_filter_best": "最好",
+  "event_filter_popular": "最热门",
+  "handmade": "By hands",
+  "resume": "By resume",
+  "deprecated": "// deprecated",
+  "auth_description": "/* Uploading via resume will automatically fill in the required fields, for example, contacts, about yourself, education */",
+  "retry": "再试一次",
+  "event_error": "检查您的互联网连接",
+  "events_and_competitions_title": "活动和比赛",
+  "events_and_competitions_subtitle": "/* 在这一部分，您可以看到即将在俄罗斯举行的体育编程活动的公告 */"
+}

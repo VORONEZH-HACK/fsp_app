@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../ui/auth/auth_screen.dart';
 import '../../ui/event_list/events_list_screen.dart';
 import '../../ui/unknown/unknown_screen.dart';
 import '../enum/routes.dart';
@@ -16,6 +17,8 @@ class NavigationController {
       case Routes.profile:
         // TODO: Handle this case.
         break;
+      case Routes.auth:
+        return _getRoute(const AuthScreen());
       case Routes.login:
         // TODO: Handle this case.
         break;
@@ -34,6 +37,9 @@ class NavigationController {
         // TODO: Handle this case.
         break;
       case Routes.feedback:
+        // TODO: Handle this case.
+        break;
+      case Routes.resume:
         // TODO: Handle this case.
         break;
     }

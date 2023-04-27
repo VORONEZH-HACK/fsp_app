@@ -1,6 +1,8 @@
 enum Routes {
   profile,
+  auth,
   login,
+  resume,
   register,
   events,
   event,

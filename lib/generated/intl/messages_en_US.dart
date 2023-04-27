@@ -22,6 +22,9 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "auth_description": MessageLookupByLibrary.simpleMessage(
+            "/* Uploading via resume will automatically fill in the required fields, for example, contacts, about yourself, education */"),
+        "deprecated": MessageLookupByLibrary.simpleMessage("// deprecated"),
         "event_date": MessageLookupByLibrary.simpleMessage("Event date"),
         "event_date_from": MessageLookupByLibrary.simpleMessage("From"),
         "event_date_hackers":
@@ -38,7 +41,9 @@ class MessageLookup extends MessageLookupByLibrary {
             "/* In this section you can see the announcements of upcoming sports programming events in Russia */"),
         "events_and_competitions_title":
             MessageLookupByLibrary.simpleMessage("Events and competitions"),
+        "handmade": MessageLookupByLibrary.simpleMessage("By hands"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "resume": MessageLookupByLibrary.simpleMessage("By resume"),
         "retry": MessageLookupByLibrary.simpleMessage("Try again"),
         "unknown_screen":
             MessageLookupByLibrary.simpleMessage("Unknown screen!"),

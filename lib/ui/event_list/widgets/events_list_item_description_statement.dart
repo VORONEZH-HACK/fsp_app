@@ -21,14 +21,14 @@ class EventsListItemDescriptionStatement extends StatelessWidget {
             text: '$statement: ',
             style: context.texts.body1.copyWith(
               color: context.colors.secondary,
-              fontWeight: FontWeight.w200,
+              fontWeight: FontWeight.w300,
             ),
           ),
           TextSpan(
             text: text,
             style: context.texts.body1.copyWith(
               color: context.colors.background,
-              fontWeight: FontWeight.w200,
+              fontWeight: FontWeight.w300,
             ),
           ),
         ],

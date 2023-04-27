@@ -92,6 +92,8 @@ flutter:
           weight: 700
         - asset: fonts/JetBrainsMono-Regular.ttf
           weight: 400
+        - asset: fonts/JetBrainsMono-Light.ttf
+          weight: 300
         - asset: fonts/JetBrainsMono-Thin.ttf
           weight: 200
   #

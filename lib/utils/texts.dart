@@ -29,8 +29,8 @@ class AppTextStyles {
 
   static const _fontFamily = 'JetBrainsMono';
 
-  static AppTextStyles get dark {
-    final colors = AppColors.dark;
+  static AppTextStyles get night {
+    final colors = AppColors.night;
 
     return AppTextStyles(
       headline1: TextStyle(
@@ -75,5 +75,5 @@ class AppTextStyles {
     );
   }
 
-  static AppTextStyles get light => dark;
+  static AppTextStyles get day => night;
 }

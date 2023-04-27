@@ -180,11 +180,51 @@ class S {
     );
   }
 
+  /// `Вручную`
+  String get handmade {
+    return Intl.message(
+      'Вручную',
+      name: 'handmade',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Через резюме`
+  String get resume {
+    return Intl.message(
+      'Через резюме',
+      name: 'resume',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `// deprecated`
+  String get deprecated {
+    return Intl.message(
+      '// deprecated',
+      name: 'deprecated',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Проверьте подключение к интернету`
   String get event_error {
     return Intl.message(
       'Проверьте подключение к интернету',
       name: 'event_error',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `/* Загрузка через резюме позволит автоматически заполнить необходимые поля, например, контакты, о себе, образование */`
+  String get auth_description {
+    return Intl.message(
+      '/* Загрузка через резюме позволит автоматически заполнить необходимые поля, например, контакты, о себе, образование */',
+      name: 'auth_description',
       desc: '',
       args: [],
     );
@@ -218,6 +258,7 @@ class AppLocalizationDelegate extends LocalizationsDelegate<S> {
     return const <Locale>[
       Locale.fromSubtags(languageCode: 'ru', countryCode: 'RU'),
       Locale.fromSubtags(languageCode: 'en', countryCode: 'US'),
+      Locale.fromSubtags(languageCode: 'zh', countryCode: 'CN'),
     ];
   }
 
