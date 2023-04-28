@@ -17,9 +17,11 @@ class EventsApi {
     required int endDate,
   }) async {
     final response = await _dio.get(
-      ApiPaths.test,
+      ApiPaths.events,
       queryParameters: {
-        'event_filter': filter.name,
+        'start-date': startDate,
+        'end-date': endDate,
+        'filter-type': filter.name,
       },
     );
     debugPrint('$response');

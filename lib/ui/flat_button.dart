@@ -11,6 +11,8 @@ class FlatButton extends StatelessWidget {
     this.padding = const EdgeInsets.only(right: 16.0),
     this.backgroundColor = Colors.transparent,
     this.borderColor = Colors.transparent,
+    this.overlayColor,
+    this.splashFactory,
     this.titleWidget,
   }) : super(key: key);
 
@@ -19,10 +21,12 @@ class FlatButton extends StatelessWidget {
   final Color backgroundColor;
   final Color borderColor;
   final Color? titleColor;
+  final Color? overlayColor;
   final TextStyle? titleStyle;
   final double borderWidth;
   final EdgeInsets padding;
   final Widget? titleWidget;
+  final InteractiveInkFeatureFactory? splashFactory;
 
   @override
   Widget build(BuildContext context) {
@@ -34,9 +38,13 @@ class FlatButton extends StatelessWidget {
           padding: MaterialStateProperty.resolveWith(
             (states) => EdgeInsets.zero,
           ),
+          overlayColor: MaterialStateProperty.resolveWith(
+            (states) => overlayColor,
+          ),
           minimumSize: MaterialStateProperty.resolveWith(
             (states) => Size.zero,
           ),
+          splashFactory: splashFactory,
           shape: MaterialStateProperty.all<RoundedRectangleBorder>(
             RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(0),

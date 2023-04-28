@@ -60,10 +60,10 @@ class S {
     );
   }
 
-  /// `Неизвестный экран`
+  /// `404 Упс, вы потерялись`
   String get unknown_screen {
     return Intl.message(
-      'Неизвестный экран',
+      '404 Упс, вы потерялись',
       name: 'unknown_screen',
       desc: '',
       args: [],
@@ -205,6 +205,106 @@ class S {
     return Intl.message(
       '// deprecated',
       name: 'deprecated',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `/* Прикрепить файл */`
+  String get attach_file {
+    return Intl.message(
+      '/* Прикрепить файл */',
+      name: 'attach_file',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Отправить`
+  String get send {
+    return Intl.message(
+      'Отправить',
+      name: 'send',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `/* Фамилия */`
+  String get login_surname {
+    return Intl.message(
+      '/* Фамилия */',
+      name: 'login_surname',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `/* Имя */`
+  String get login_name {
+    return Intl.message(
+      '/* Имя */',
+      name: 'login_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `/* Отчество */`
+  String get login_patronymic {
+    return Intl.message(
+      '/* Отчество */',
+      name: 'login_patronymic',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `/* Образовательная организация */`
+  String get login_edu {
+    return Intl.message(
+      '/* Образовательная организация */',
+      name: 'login_edu',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `/* Email */`
+  String get login_email {
+    return Intl.message(
+      '/* Email */',
+      name: 'login_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `/* Пароль */`
+  String get login_password {
+    return Intl.message(
+      '/* Пароль */',
+      name: 'login_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `/* Даю согласие на обработку персональных данных */`
+  String get agreement {
+    return Intl.message(
+      '/* Даю согласие на обработку персональных данных */',
+      name: 'agreement',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Файл в формате pdf до 5 мб`
+  String get file_description {
+    return Intl.message(
+      'Файл в формате pdf до 5 мб',
+      name: 'file_description',
       desc: '',
       args: [],
     );

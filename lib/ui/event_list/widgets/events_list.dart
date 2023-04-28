@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../../domain/enum/event_filters.dart';
-import '../../../domain/model/event_model.dart';
 import '../../../domain/providers.dart';
 import '../../../utils/extensions.dart';
 import '../../flat_button.dart';
@@ -37,7 +36,7 @@ class _EventsListState extends ConsumerState<EventsList> {
     debugPrint('${controller.isError}');
     debugPrint('${controller.isLoading}');
     return ListView.builder(
-      itemCount: controller.events?.events.length ?? 1 + 1,
+      itemCount: controller.events?.events.length ?? 1 + 2,
       itemBuilder: (context, index) {
         if (index == 0) return const EventsListHeader();
 
@@ -48,6 +47,8 @@ class _EventsListState extends ConsumerState<EventsList> {
             ),
           );
         }
+
+        if (index == 1) return const SizedBox(height: 10);
 
         if (controller.isError) {
           debugPrint(controller.error);
@@ -82,22 +83,10 @@ class _EventsListState extends ConsumerState<EventsList> {
           debugPrint('Warning! Something went wrong. No data.');
         }
 
-        return const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 28.0, vertical: 12.0),
+        return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 28.0, vertical: 12.0),
           child: EventsListItem(
-            event: EventModel(
-              name: 'Хакатон в рамках Всероссийских соревнований '
-                  'по спортивному программированию',
-              minHackersCount: 3,
-              maxHackersCount: 5,
-              rating: 4.9,
-              description:
-                  '26-29 апреля пройдут первые Всероссийские соревнования по '
-                  'спортивному программированию и Всероссийские соревнования',
-              startDate: 1682599089,
-              endDate: 1682699089,
-              place: 'г. Воронеж',
-            ),
+            event: controller.events!.events[index],
           ),
         );
       },

@@ -41,7 +41,7 @@ class EventsListController extends StateNotifier<EventsListState> {
       final endDate = startDate.add(const Duration(days: 6 * 30));
       final events = await _api.getEvents(
         filter: filter,
-        startDate: startDate.millisecondsSinceEpoch,
+        startDate: 0,
         endDate: endDate.millisecondsSinceEpoch,
       );
 

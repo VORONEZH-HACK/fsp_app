@@ -20,17 +20,19 @@ EventModel _$EventModelFromJson(Map<String, dynamic> json) {
 
 /// @nodoc
 mixin _$EventModel {
+  @JsonKey(name: 'uuid')
+  String get uuid => throw _privateConstructorUsedError;
   @JsonKey(name: 'name')
   String get name => throw _privateConstructorUsedError;
-  @JsonKey(name: 'min')
+  @JsonKey(name: 'min-participants')
   int get minHackersCount => throw _privateConstructorUsedError;
-  @JsonKey(name: 'max')
+  @JsonKey(name: 'max-participants')
   int get maxHackersCount => throw _privateConstructorUsedError;
   @JsonKey(name: 'description')
   String get description => throw _privateConstructorUsedError;
-  @JsonKey(name: 'start')
+  @JsonKey(name: 'start-date')
   int get startDate => throw _privateConstructorUsedError;
-  @JsonKey(name: 'end')
+  @JsonKey(name: 'end-date')
   int get endDate => throw _privateConstructorUsedError;
   @JsonKey(name: 'rating')
   double get rating => throw _privateConstructorUsedError;
@@ -50,12 +52,13 @@ abstract class $EventModelCopyWith<$Res> {
       _$EventModelCopyWithImpl<$Res, EventModel>;
   @useResult
   $Res call(
-      {@JsonKey(name: 'name') String name,
-      @JsonKey(name: 'min') int minHackersCount,
-      @JsonKey(name: 'max') int maxHackersCount,
+      {@JsonKey(name: 'uuid') String uuid,
+      @JsonKey(name: 'name') String name,
+      @JsonKey(name: 'min-participants') int minHackersCount,
+      @JsonKey(name: 'max-participants') int maxHackersCount,
       @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'start') int startDate,
-      @JsonKey(name: 'end') int endDate,
+      @JsonKey(name: 'start-date') int startDate,
+      @JsonKey(name: 'end-date') int endDate,
       @JsonKey(name: 'rating') double rating,
       @JsonKey(name: 'place') String place});
 }
@@ -73,6 +76,7 @@ class _$EventModelCopyWithImpl<$Res, $Val extends EventModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? uuid = null,
     Object? name = null,
     Object? minHackersCount = null,
     Object? maxHackersCount = null,
@@ -83,6 +87,10 @@ class _$EventModelCopyWithImpl<$Res, $Val extends EventModel>
     Object? place = null,
   }) {
     return _then(_value.copyWith(
+      uuid: null == uuid
+          ? _value.uuid
+          : uuid // ignore: cast_nullable_to_non_nullable
+              as String,
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -128,12 +136,13 @@ abstract class _$$_EventModelCopyWith<$Res>
   @override
   @useResult
   $Res call(
-      {@JsonKey(name: 'name') String name,
-      @JsonKey(name: 'min') int minHackersCount,
-      @JsonKey(name: 'max') int maxHackersCount,
+      {@JsonKey(name: 'uuid') String uuid,
+      @JsonKey(name: 'name') String name,
+      @JsonKey(name: 'min-participants') int minHackersCount,
+      @JsonKey(name: 'max-participants') int maxHackersCount,
       @JsonKey(name: 'description') String description,
-      @JsonKey(name: 'start') int startDate,
-      @JsonKey(name: 'end') int endDate,
+      @JsonKey(name: 'start-date') int startDate,
+      @JsonKey(name: 'end-date') int endDate,
       @JsonKey(name: 'rating') double rating,
       @JsonKey(name: 'place') String place});
 }
@@ -149,6 +158,7 @@ class __$$_EventModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? uuid = null,
     Object? name = null,
     Object? minHackersCount = null,
     Object? maxHackersCount = null,
@@ -159,6 +169,10 @@ class __$$_EventModelCopyWithImpl<$Res>
     Object? place = null,
   }) {
     return _then(_$_EventModel(
+      uuid: null == uuid
+          ? _value.uuid
+          : uuid // ignore: cast_nullable_to_non_nullable
+              as String,
       name: null == name
           ? _value.name
           : name // ignore: cast_nullable_to_non_nullable
@@ -199,12 +213,13 @@ class __$$_EventModelCopyWithImpl<$Res>
 @JsonSerializable()
 class _$_EventModel implements _EventModel {
   const _$_EventModel(
-      {@JsonKey(name: 'name') required this.name,
-      @JsonKey(name: 'min') required this.minHackersCount,
-      @JsonKey(name: 'max') required this.maxHackersCount,
+      {@JsonKey(name: 'uuid') required this.uuid,
+      @JsonKey(name: 'name') required this.name,
+      @JsonKey(name: 'min-participants') required this.minHackersCount,
+      @JsonKey(name: 'max-participants') required this.maxHackersCount,
       @JsonKey(name: 'description') required this.description,
-      @JsonKey(name: 'start') required this.startDate,
-      @JsonKey(name: 'end') required this.endDate,
+      @JsonKey(name: 'start-date') required this.startDate,
+      @JsonKey(name: 'end-date') required this.endDate,
       @JsonKey(name: 'rating') required this.rating,
       @JsonKey(name: 'place') required this.place});
 
@@ -212,22 +227,25 @@ class _$_EventModel implements _EventModel {
       _$$_EventModelFromJson(json);
 
   @override
+  @JsonKey(name: 'uuid')
+  final String uuid;
+  @override
   @JsonKey(name: 'name')
   final String name;
   @override
-  @JsonKey(name: 'min')
+  @JsonKey(name: 'min-participants')
   final int minHackersCount;
   @override
-  @JsonKey(name: 'max')
+  @JsonKey(name: 'max-participants')
   final int maxHackersCount;
   @override
   @JsonKey(name: 'description')
   final String description;
   @override
-  @JsonKey(name: 'start')
+  @JsonKey(name: 'start-date')
   final int startDate;
   @override
-  @JsonKey(name: 'end')
+  @JsonKey(name: 'end-date')
   final int endDate;
   @override
   @JsonKey(name: 'rating')
@@ -238,7 +256,7 @@ class _$_EventModel implements _EventModel {
 
   @override
   String toString() {
-    return 'EventModel(name: $name, minHackersCount: $minHackersCount, maxHackersCount: $maxHackersCount, description: $description, startDate: $startDate, endDate: $endDate, rating: $rating, place: $place)';
+    return 'EventModel(uuid: $uuid, name: $name, minHackersCount: $minHackersCount, maxHackersCount: $maxHackersCount, description: $description, startDate: $startDate, endDate: $endDate, rating: $rating, place: $place)';
   }
 
   @override
@@ -246,6 +264,7 @@ class _$_EventModel implements _EventModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_EventModel &&
+            (identical(other.uuid, uuid) || other.uuid == uuid) &&
             (identical(other.name, name) || other.name == name) &&
             (identical(other.minHackersCount, minHackersCount) ||
                 other.minHackersCount == minHackersCount) &&
@@ -262,7 +281,7 @@ class _$_EventModel implements _EventModel {
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode => Object.hash(runtimeType, name, minHackersCount,
+  int get hashCode => Object.hash(runtimeType, uuid, name, minHackersCount,
       maxHackersCount, description, startDate, endDate, rating, place);
 
   @JsonKey(ignore: true)
@@ -281,12 +300,13 @@ class _$_EventModel implements _EventModel {
 
 abstract class _EventModel implements EventModel {
   const factory _EventModel(
-      {@JsonKey(name: 'name') required final String name,
-      @JsonKey(name: 'min') required final int minHackersCount,
-      @JsonKey(name: 'max') required final int maxHackersCount,
+      {@JsonKey(name: 'uuid') required final String uuid,
+      @JsonKey(name: 'name') required final String name,
+      @JsonKey(name: 'min-participants') required final int minHackersCount,
+      @JsonKey(name: 'max-participants') required final int maxHackersCount,
       @JsonKey(name: 'description') required final String description,
-      @JsonKey(name: 'start') required final int startDate,
-      @JsonKey(name: 'end') required final int endDate,
+      @JsonKey(name: 'start-date') required final int startDate,
+      @JsonKey(name: 'end-date') required final int endDate,
       @JsonKey(name: 'rating') required final double rating,
       @JsonKey(name: 'place') required final String place}) = _$_EventModel;
 
@@ -294,22 +314,25 @@ abstract class _EventModel implements EventModel {
       _$_EventModel.fromJson;
 
   @override
+  @JsonKey(name: 'uuid')
+  String get uuid;
+  @override
   @JsonKey(name: 'name')
   String get name;
   @override
-  @JsonKey(name: 'min')
+  @JsonKey(name: 'min-participants')
   int get minHackersCount;
   @override
-  @JsonKey(name: 'max')
+  @JsonKey(name: 'max-participants')
   int get maxHackersCount;
   @override
   @JsonKey(name: 'description')
   String get description;
   @override
-  @JsonKey(name: 'start')
+  @JsonKey(name: 'start-date')
   int get startDate;
   @override
-  @JsonKey(name: 'end')
+  @JsonKey(name: 'end-date')
   int get endDate;
   @override
   @JsonKey(name: 'rating')

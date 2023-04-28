@@ -22,6 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "agreement": MessageLookupByLibrary.simpleMessage(
+            "/* Даю согласие на обработку персональных данных */"),
+        "attach_file":
+            MessageLookupByLibrary.simpleMessage("/* Прикрепить файл */"),
         "auth_description": MessageLookupByLibrary.simpleMessage(
             "/* Uploading via resume will automatically fill in the required fields, for example, contacts, about yourself, education */"),
         "deprecated": MessageLookupByLibrary.simpleMessage("// deprecated"),
@@ -41,12 +45,22 @@ class MessageLookup extends MessageLookupByLibrary {
             "/* In this section you can see the announcements of upcoming sports programming events in Russia */"),
         "events_and_competitions_title":
             MessageLookupByLibrary.simpleMessage("Events and competitions"),
+        "file_description":
+            MessageLookupByLibrary.simpleMessage("Файл в формате pdf до 5 мб"),
         "handmade": MessageLookupByLibrary.simpleMessage("By hands"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "login_edu": MessageLookupByLibrary.simpleMessage(
+            "/* Образовательная организация */"),
+        "login_email": MessageLookupByLibrary.simpleMessage("/* Email */"),
+        "login_name": MessageLookupByLibrary.simpleMessage("/* Имя */"),
+        "login_password": MessageLookupByLibrary.simpleMessage("/* Пароль */"),
+        "login_patronymic":
+            MessageLookupByLibrary.simpleMessage("/* Отчество */"),
+        "login_surname": MessageLookupByLibrary.simpleMessage("/* Фамилия */"),
         "resume": MessageLookupByLibrary.simpleMessage("By resume"),
         "retry": MessageLookupByLibrary.simpleMessage("Try again"),
-        "unknown_screen":
-            MessageLookupByLibrary.simpleMessage("Unknown screen!"),
+        "send": MessageLookupByLibrary.simpleMessage("Отправить"),
+        "unknown_screen": MessageLookupByLibrary.simpleMessage("404 Oops"),
         "welcome_title":
             MessageLookupByLibrary.simpleMessage("Welcome to the flutter")
       };

@@ -71,7 +71,12 @@ class AppTextStyles {
         fontSize: 14,
         height: 20 / 14,
       ),
-      body3: const TextStyle(),
+      body3: TextStyle(
+        fontFamily: _fontFamily,
+        color: colors.primary,
+        fontSize: 12,
+        height: 18 / 12,
+      ),
     );
   }
 
